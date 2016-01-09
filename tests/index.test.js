@@ -270,7 +270,7 @@ describe('monc', function() {
           });
         },
         function(arg1, callback){
-          albumModel.find({}).lean().cache("binKey3").exec(function(err, newAlbums) {
+          albumModel.find({}).clean().lean().cache("binKey3").exec(function(err, newAlbums) {
             if (err) return done(err);
             callback(null, 'next');
           });
@@ -278,7 +278,7 @@ describe('monc', function() {
     ], function (err, result) {
         //3 iterations 3 objects into the cache
         //one more is the attached model's keys if this options is set
-          
+
        expect(albumModel.allValues().length).to.be.within(3,4);
        done();
     });

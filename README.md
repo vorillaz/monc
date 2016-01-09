@@ -65,6 +65,16 @@ test.find({}).lean().cache("helloCache").exec(function(err, docs) {
 
 ```
 
+`.clean(binKey)` Removes the stored objects.
+The binKey is optional.
+```javascript
+  var test = mongoose.model('testModel');
+  test.find({}).cleanAll().cache("helloCache").exec(function(err, docs) {
+    //Firsty the cache is reset
+    //afterwards docs are saved into the cache, mapped to "helloCache"
+  });
+```
+
 `.cleanAll()` Resets the whole cache.
 ```javascript
   var test = mongoose.model('testModel');
