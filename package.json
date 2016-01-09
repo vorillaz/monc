@@ -2,11 +2,10 @@
   "name": "monc",
   "version": "0.1.0",
   "author": "Theodore Vorillas <sayhi@vorillaz.com>",
-  "description": "Caches Database querys the easy way.",
-  "main": "./index",
+  "description": "The ultimate MongoDB cache module.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Gottox/mongoose-cache.git"
+    "url": "https://github.com/vorillaz/monc.git"
   },
   "license": "MIT",
   "keywords": [
