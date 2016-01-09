@@ -1,0 +1,47 @@
+{
+  "name": "monc",
+  "version": "0.1.0",
+  "author": "Theodore Vorillas <sayhi@vorillaz.com>",
+  "description": "Caches Database querys the easy way.",
+  "main": "./index",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gottox/mongoose-cache.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "mongoose",
+    "cache",
+    "Memcached",
+    "lru-cache",
+    "mongodb",
+    "nosql",
+    "membase",
+    "hashing",
+    "failover",
+    "cluster",
+    "schema",
+    "model",
+    "document",
+    "mongodb",
+    "client",
+    "cached",
+    "mongo",
+    "express"
+  ],
+  "devDependencies": {
+    "chai": "~2.2.0",
+    "mocha": "~2.2.4",
+    "mongoose": "~3.8.26",
+    "async": "~1.5.2"
+  },
+  "dependencies" : {
+    "lru-cache": "^4.0.0"
+  },
+  "engine": {
+    "node": ">=0.6"
+  },
+  "scripts": {
+    "test": "mocha ./tests/index.test.js"
+  }
+}
