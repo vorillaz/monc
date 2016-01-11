@@ -182,6 +182,15 @@ Since fetching Mongoose queries could be hard and inefficient Monc attaches usef
   })
 ```
 
+`.cleanAssoc()` Removes all the associated stored objects and keys mapped to the parent Model. This method requires the `modelValues` set to true.
+
+```javascript
+
+  var test = mongoose.model('testModel');
+  test.cleanAssoc();
+
+```
+
 ## Running tests
 Tests are powered by Mocha and Chai
 There are a bunch of them provided. Run them by.

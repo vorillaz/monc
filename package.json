@@ -1,6 +1,6 @@
 {
   "name": "monc",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "author": "Theodore Vorillas <sayhi@vorillaz.com>",
   "description": "The ultimate MongoDB cache module.",
   "repository": {
